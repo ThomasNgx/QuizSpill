@@ -1,0 +1,76 @@
+/* Generell styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#home-screen, #quiz-screen, #game-over-screen, #win-screen {
+    margin-top: 50px;
+}
+
+/* Kategoriknapper */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    width: 150px;
+}
+
+.category.completed {
+    background-color: green;
+    cursor: not-allowed;
+}
+
+#lives {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Svaralternativer */
+#answers button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+/* Game Over og Vinn-skjerm */
+#game-over-screen h1, #win-screen h1 {
+    color: red;
+}
+
+#restart-button, #restart-button-win {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+
+
+/* Livsindikator på quizskjermen */
+#quiz-lives {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 20px;
+}

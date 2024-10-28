@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Er du smartere enn et skolebarn?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hjemskjerm -->
+    <div id="home-screen">
+        <h1>Velg en kategori</h1>
+        <div class="categories">
+            <button class="category" data-category="matte">Matte</button>
+            <button class="category" data-category="naturfag">Naturfag</button>
+            <button class="category" data-category="samfunnsfag">Samfunnsfag</button>
+            <button class="category" data-category="norsk">Norsk</button>
+            <button class="category" data-category="engelsk">Engelsk</button>
+            <button class="category" data-category="krle">KRLE</button>
+        </div>
+        <div id="lives">Liv igjen: <span id="life-count">3</span></div>
+    </div>
+
+    <!-- Quizskjerm -->
+    <div id="quiz-screen" style="display: none;">
+        <!-- Legg til livsindikator her -->
+        <div id="quiz-lives">
+            <span id="quiz-life-count">❤❤❤</span>
+        </div>
+        <h2 id="question-text"></h2>
+        <div id="answers"></div>
+    </div>
+
+    <!-- Game Over-skjerm -->
+    <div id="game-over-screen" style="display: none;">
+        <h1>Game Over!</h1>
+        <button id="restart-button">Start på nytt</button>
+    </div>
+    
+
+    <!-- Vinn-skjerm -->
+    <div id="win-screen" style="display: none;">
+        <h1>Gratulerer! Du vant spillet!</h1>
+        <button id="restart-button-win">Start på nytt</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
