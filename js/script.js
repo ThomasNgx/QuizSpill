@@ -1,4 +1,4 @@
-// Hent elementer fra DOM
+// Henter elementer fra DOM
 const lifeCountElement = document.getElementById('life-count');
 const quizLifeCountElement = document.getElementById('quiz-life-count'); 
 const categoryButtons = document.querySelectorAll('.category');
