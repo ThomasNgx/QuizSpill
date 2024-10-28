@@ -2,7 +2,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #cce3f0; /* Lys blå bakgrunn */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 h1, h2 {
@@ -22,27 +28,57 @@ button {
 
 /* Kategoriknapper */
 .categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px); 
+    gap: 20px; 
+    margin-top: 20px;
 }
 
+
+
+/* Quizskjerm */
 .category {
-    background-color: #007BFF;
-    color: white;
+    background-color: #d4c2f0; 
+    color: #333;
     border: none;
     width: 150px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category:active {
+    transform: scale(0.95);
 }
 
 .category.completed {
-    background-color: green;
+    background-color: #a1e3a1; /* Grønn bakgrunn for fullførte kategorier */
     cursor: not-allowed;
+    color: white;
 }
 
+/* Livsindikator */
 #lives {
     font-size: 18px;
     margin-top: 20px;
+}
+
+/* Quiz-skjerm stil */
+#quiz-lives {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 20px;
 }
 
 /* Svaralternativer */
@@ -58,12 +94,18 @@ button {
 /* Game Over og Vinn-skjerm */
 #game-over-screen h1, #win-screen h1 {
     color: red;
+    font-size: 32px;
 }
 
 #restart-button, #restart-button-win {
     background-color: #28a745;
     color: white;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 
